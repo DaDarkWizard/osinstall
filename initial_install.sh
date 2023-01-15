@@ -27,3 +27,17 @@ then
     echo "vscode installed"
     exit
 fi
+
+if ! command -v curl &> /dev/null
+then
+    echo "Installing curl"
+    sudo apt install -y curl &> /dev/null
+    echo "Vim installed"
+    exit
+fi
+
+echo "Doing some git setup"
+git config --global user.email "dtmasker@mtu.edu" &> /dev/null
+git config --global user.name "Daniel Masker" &> /dev/null
+git config --global credential.helper store &> /dev/null
+echo "Git setup"
