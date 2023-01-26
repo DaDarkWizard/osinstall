@@ -19,3 +19,15 @@
 ## Steam
 - Reason: Snap does not have enough permissions
 - Method: website
+
+## Conda
+- Reason: No apt
+- Method: web download
+
+## VScode
+- Reason: Snap bad permissions
+- Method: VSCode.md
+
+## Mono
+- Reason: Unity needs it for syntax in VSCode
+- Method: mono-project.com
