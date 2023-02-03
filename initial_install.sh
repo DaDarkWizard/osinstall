@@ -36,6 +36,14 @@ then
     exit
 fi
 
+if ! command -v vlc &> /dev/null
+then
+    echo "Installing vlc media player"
+    sudo apt install -y vlc &> /dev/null
+    echo "VLC installed"
+    exit
+fi
+
 echo "Doing some git setup"
 git config --global user.email "dtmasker@mtu.edu" &> /dev/null
 git config --global user.name "Daniel Masker" &> /dev/null
